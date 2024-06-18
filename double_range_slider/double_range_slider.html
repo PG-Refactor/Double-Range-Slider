@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Double Range Slider</title>
+    <link rel="stylesheet" href="double_range_slider.css">
+    <script src="double_range_slider_controller.js"></script>
+</head>
+<body>
+    <div id="double-range-slider-container1" class="double-range-slider-container">
+        <div class="double-range-slider">
+            <div class="slider-track"></div>
+            <input class="lower-limit-slider" type="range" min="0" max="100" value="0" step="1" oninput="updateLowerLimitValue('#double-range-slider-container1')">
+            <input class="upper-limit-slider" type="range" min="0" max="100" value="100" step="1" oninput="updateUpperLimitValue('#double-range-slider-container1')">
+        </div>
+        <div class="limit-display">
+            <span class="lower-limit">0</span>
+            <span>&dash;</span>
+            <span class="upper-limit">100</span>
+        </div>
+    </div>
+
+    <div id="double-range-slider-container2" class="double-range-slider-container">
+        <div class="double-range-slider">
+            <div class="slider-track"></div>
+            <input class="lower-limit-slider" type="range" min="0" max="100" value="0" step="1" oninput="updateLowerLimitValue('#double-range-slider-container2')">
+            <input class="upper-limit-slider" type="range" min="0" max="100" value="100" step="1" oninput="updateUpperLimitValue('#double-range-slider-container2')">
+        </div>
+        <div class="limit-display">
+            <span class="lower-limit">0</span>
+            <span>&dash;</span>
+            <span class="upper-limit">100</span>
+        </div>
+    </div>
+</body>
+</html>

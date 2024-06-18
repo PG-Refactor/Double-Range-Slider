@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.double-range-slider-container{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    outline: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.double-range-slider{
+    background-color: #CEF4FF;
+    width: 200px;
+    height: 20px;
+    position: relative;
+    outline: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.double-range-slider .slider-track{
+    width: calc(100% - 10px);
+    height: 2px;
+    background-color: #5B84FF;
+    position: absolute;
+    border-radius: 1px;
+}
+
+.double-range-slider input[type="range"]{
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    background-color: transparent;
+    pointer-events: none;
+    margin-top: 10px;
+}
+
+.double-range-slider input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% 0,100% 100%,0 100%);
+    width: 10px;
+    background-color: #5B84FF;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.double-range-slider-container .limit-display{
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
